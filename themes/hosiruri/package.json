@@ -1,0 +1,18 @@
+{
+  "name": "hosiruri",
+  "version": "0.1.6",
+  "description": "hexo theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hosiruri",
+    "hexo"
+  ],
+  "author": "izayoi_senya",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.6"
+  }
+}

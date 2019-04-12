@@ -2,6 +2,9 @@
 # Theme Core Configuration Settings
 # ---------------------------------------------------------------
 
+config:
+  language: CN
+
 # Set to true, if you want to fully override the default configuration.
 # Useful if you don't want to inherit the theme _config.yml configurations.
 override: false
@@ -10,6 +13,7 @@ override: false
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
+
 
 # To get or check favicons visit: https://realfavicongenerator.net
 # Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
@@ -69,7 +73,7 @@ index_with_subtitle: false
 
 # 一级目录
 menu:
-  首页（test）: / || home
+  首页: / || home
   抓到我: javascript:; || sign-language
   实验室: javascript:; || flask
   归档: /archives/ || archive
@@ -102,10 +106,8 @@ menu_icons:
 # Scheme Settings   主题（方案）设定
 # ---------------------------------------------------------------
 # Schemes
-# scheme: Muse
-#scheme: Mist
-scheme: Pisces
-#scheme: Gemini
+scheme: star
+#scheme: aki
 
 
 # ---------------------------------------------------------------
