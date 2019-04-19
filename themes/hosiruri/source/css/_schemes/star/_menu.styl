@@ -5,8 +5,8 @@
     top: 0;
     position: fixed;
     z-index: 3;
-    background: #000;
-    background: rgba(40,42,44,.6);
+    background: $pale-violet-red;
+    background: $violet;
 
     +mobile() {
       position: relative;
@@ -32,23 +32,24 @@
   +mobile() {
     display: flex;
     width: 100%;
+    padding: 0
   }
 }
 
 .menu .menu-item {
   border: 0;
   display: inline-block;
-  height: 38px;
-  line-height: 38px;
+  height: 48px;
+  line-height: 48px;
   position: relative;
   text-align: left;
   margin: 0 20px 0 0;
-  color: #fff;
 
   +mobile() {
     flex: 1;
     -webkit-box-flex: 1;
     margin: 0;
+    text-align: center;
   }
 
   a {
@@ -58,18 +59,19 @@
     line-height: inherit;
     transition-property: background-color;
     the-transition();
-    color: #fff;
+    color: aliceBlue;
     font-size: 14px;
+    font-weight: $font-weight-bold;
+    display: inline-block;
 
     +mobile() {
-      text-align: center;
       padding: 0;
     }
 
     &:hover {
-      background: #f9f9f9;
       border-bottom: none;
-      color: #555;
+      background: rgba(0, 0, 0, 0.15)
+      color: #aaa;
     }
 
     .fa {

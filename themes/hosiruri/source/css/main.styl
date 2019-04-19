@@ -2,37 +2,37 @@
 
 
 
-$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
-// $variables = base $scheme custom;
-// $mixins    = base $scheme custom;
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'hosiruri';
+$variables = base $scheme custom;
+$mixins    = base $scheme custom;
 
 
 
 
-// // Variables Layer
-// // --------------------------------------------------
-// for $variable in $variables
-//   @import "_variables/" + $variable
+// Variables Layer
+// --------------------------------------------------
+for $variable in $variables
+  @import "_variables/" + $variable
       
 
-// // Mixins Layer
-// // --------------------------------------------------
-// for $mixin in $mixins
-//   @import "_mixins/" + $mixin;
+// Mixins Layer
+// --------------------------------------------------
+for $mixin in $mixins
+  @import "_mixins/" + $mixin;
 
 
 
-// // Common Layer
-// // --------------------------------------------------
+// Common Layer
+// --------------------------------------------------
 
-// // Scaffolding
-// @import "_common/scaffolding";
+// Scaffolding
+@import "_common/scaffolding";
 
-// // Layout
-// @import "_common/outline";
+// Layout
+@import "_common/outline";
 
-// // Components
-// @import "_common/components";
+// Components
+@import "_common/components";
 
 
 // Schemes Layer
