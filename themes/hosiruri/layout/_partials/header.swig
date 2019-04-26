@@ -19,25 +19,14 @@
 </nav>
 
 <div class="site-brand-wrapper">
-  <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
-    {% if theme.custom_logo.image and theme.scheme === 'star' %}
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
-               alt="{{ config.title }}"/>
-        </a>
-      </div>
-    {% endif %}
-      {% if theme.seo %}
-        <h1 class="site-subtitle" itemprop="description">{{ config.subtitle }}</h1>
-      {% else %}
-        <p class="site-subtitle">{{ config.subtitle }}</p>
-      {% endif %}
-  </div>
+ 
 </div>
+
+{#   这里的样式写在 menu.styl 里的
 <div class="site-master" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-master-avatar" itemprop="image" src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}" alt="{{ theme.author }}" />
     <h2 class="site-master-description" itemprop="description">
         {{ theme.description }}
     </h2>
 </div>
+#}
