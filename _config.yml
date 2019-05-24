@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: John Doe
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -89,3 +89,10 @@ algolia:
   algolia_search.hits: {per_page":10}
   algolia_search.labels: {"input_placeholder":"搜索...","hits_empty":"未发现与 「${query}」相关的内容","hits_stats":"${hits} 条相关条目，使用了 ${time} 毫秒"}
   chunkSize: 5000
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: 6Dv4ozIUSur0wpPXrAS8qjA5-gzGzoHsz
+  app_key: PbmLanAMHXbmHJyagXttCmEw
+  username: izayoi_senya
+  password: urusai!!
