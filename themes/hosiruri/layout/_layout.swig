@@ -8,7 +8,9 @@
   <head>
     {% include '_partials/head.swig' %}
     <title>{% block title %}{% endblock %}</title>
+    {% include '_third-party/analytics/index.swig' %}
   </head>
+
   <body>
     {% set container_class = "container " %}
     {% if theme.sidebar.position %}
@@ -34,6 +36,18 @@
           {% endif %}
         </div>
       </main>
+
+      <footer></footer>
+
+      {% if not theme.sidebar.b2t %}
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        {% if theme.sidebar.scrollpercent %}
+          <span id="scrollpercent"><span>0</span>%</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
     <div>
     </div>
   </body>

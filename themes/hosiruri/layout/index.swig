@@ -18,6 +18,6 @@
   {% include '_partials/pagination.swig' %}
 {% endblock %}
 
-{# block sidebar %}
+{% block sidebar %}
   {{ sidebar_template.render(false) }}
-{% endblock #}
+{% endblock %}
