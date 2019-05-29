@@ -118,11 +118,11 @@ scheme: star
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 # `链接 || 图标样式` 
 social:
-  GitHub: https://github.com/DIYgod || <i class="fa fa-fw fa-github"></i>
-  Twitter: https://twitter.com/DIYgod || <i class="fa fa-fw fa-twitter"></i>
-  QQ 群: /images/qq-g.jpg || <i class="fa fa-fw fa-qq"></i>
-  Telegram 频道: https://t.me/awesomeDIYgod || <i class="fa fa-fw fa-telegram"></i>
-  Telegram 群: https://t.me/prpr233 || <i class="fa fa-fw fa-telegram"></i>
+  GitHub: https://github.com/DIYgod || github
+  Twitter: https://twitter.com/DIYgod || twitter
+  QQ 群: /images/qq-g.jpg || qq
+  Telegram 频道: https://t.me/awesomeDIYgod || telegram
+  Telegram 群: https://t.me/prpr233 || telegram
 
 social_icons:
   enable: true
@@ -165,7 +165,7 @@ sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
   # 侧边栏位置
   # position: left
-  position: right
+  position: left
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -229,6 +229,10 @@ post_wordcount:
   min2read: false
   totalcount: false
   separated_meta: false
+
+# Read more button
+# If true, the read more button would be displayed in excerpt section.
+read_more_btn: true
 
 # 微信订阅设置？
 # Wechat Subscriber
@@ -641,6 +645,7 @@ tabs:
 #! ---------------------------------------------------------------
 
 # Use velocity to animate everything.
+# $(...).velocity is not a function 暂时使用不了 以后看情况填坑吧
 motion:
   enable: false
   async: false
@@ -752,6 +757,11 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
+  # Internal version: 1.0.0 
+  # See: https://github.com/zproo/canvas-ribbon
+  # Example: 彩带
+  canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
+
   # Internal version: 3.3.1
   jquery: https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 
@@ -773,6 +783,7 @@ vendors:
   # Internal version: 2.0.5 
   # 动画特效
   # See: http://VelocityJS.org
+  velocity: https://cdn.bootcss.com/velocity/2.0.5/velocity.min.js
   velocity_ui: https://cdn.bootcss.com/velocity/2.0.5/velocity.ui.min.js
 
   # Internal version: 0.7.19  
@@ -849,3 +860,8 @@ description: <span>はじまる</span>
 
 # Theme version
 version: 0.0.37
+
+# Assets
+css: css
+js: js
+images: images

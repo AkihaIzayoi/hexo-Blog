@@ -3,12 +3,19 @@
 {% if theme.motion.enable %}
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
+{# Language & Config #}
+{% set title = __('title') !== 'title' && __('title') || config.title %}
+{% set subtitle = __('subtitle') !== 'subtitle' && __('subtitle') || config.subtitle %}
+{% set author = __('author') !== 'author' && __('author') || config.author %}
+{% set description = __('description') !== 'description' && __('description') || config.description %}
+
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
   <head>
     {% include '_partials/head.swig' %}
     <title>{% block title %}{% endblock %}</title>
     {% include '_third-party/analytics/index.swig' %}
+    {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   </head>
 
   <body>
@@ -50,5 +57,11 @@
 
     <div>
     </div>
+
+  {% include '_scripts/vendors.swig' %}
+  {% include '_scripts/commons.swig' %}
+  {% include '_scripts/next-boot.swig' %}
+  {% include '_scripts/scroll-cookie.swig' %}
+  {% include '_scripts/exturl.swig' %}
   </body>
 </html>
