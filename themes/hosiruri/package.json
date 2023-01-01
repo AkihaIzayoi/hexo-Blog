@@ -13,6 +13,6 @@
   "author": "izayoi_senya",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.29.6"
+    "webpack": "^5.75.0"
   }
 }
